@@ -1,93 +1,58 @@
 <div class="container container--page container--shrink">
-  <h1 class="text-color">Lorem ipsum</h1>
+  <h1 class="text-color">Serwisy</h1>
 
   <div class="flex justify-content-end">
-    <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer" icon="pi pi-check"
+    <a href="https://angular.io/guide/architecture-services" target="_blank" rel="noopener noreferrer"
+       icon="pi pi-check"
        class="p-button p-button-sm font-bold">
       <i class="pi pi-link pr-2"></i>
-      <span>Link</span>
+      <span>Dokumentacja</span>
     </a>
   </div>
 
-  <p class="text-color"><span class="font-bold">Lorem ipsum </span>dolor sit amet, consectetur adipiscing elit.
-    Phasellus at consequat ex. Sed sodales nunc ut consequat tempus. Vestibulum efficitur justo elit, non aliquam ante
-    consequat convallis. Suspendisse lobortis ex eros, varius rhoncus mauris rhoncus eu. Etiam pretium nec arcu at
-    gravida. Fusce at malesuada turpis. Mauris dignissim elementum quam tempus vestibulum. Nam sodales risus et ante
-    sodales hendrerit. Aenean et maximus odio, ut efficitur ligula. Nam at condimentum eros. Nunc interdum fermentum
-    massa. Ut pellentesque vitae sem vitae varius. Etiam non ultricies lorem. Aliquam vitae velit urna. Aenean ultricies
-    orci congue posuere commodo.</p>
-
-  <p class="text-color">Quisque iaculis, lectus sit amet commodo feugiat, ligula diam sodales ipsum, sit amet egestas
-    enim mi et turpis. Maecenas pretium finibus dolor nec <span class="font-bold">elementum</span>. Nunc sed sem vel
-    felis sagittis congue. </p>
-
-  <p class="text-color">Główne zalety <span class="font-bold">NgRx</span> to:</p>
-  <ul>
-    <li class="text-color mb-2"><span class="font-bold">Jednolitość:</span> Wszystkie zmiany w stanie aplikacji są
-      wykonywane w sposób jednostronny i przewidywalny, co ułatwia debugowanie i utrzymanie kodu.
-    </li>
-    <li class="text-color mb-2"><span class="font-bold">Unikalność źródła prawdy:</span> Stan aplikacji jest
-      przechowywany w jednym miejscu (w store), co eliminuje możliwość niezgodności danych.
-    </li>
-    <li class="text-color mb-2"><span class="font-bold">Łatwość testowania:</span> Możliwość testowania reduktorów oraz
-      selektorów pozwala na łatwe pisanie testów jednostkowych.
-    </li>
-    <li class="text-color mb-2"><span class="font-bold">Łatwość w reagowaniu na zmiany:</span> Mechanizm subskrypcji do
-      zmian w stanie pozwala na reagowanie na te zmiany w komponentach interfejsu użytkownika.
-    </li>
-  </ul>
-
-  <p class="text-color"><span class="font-bold">NgRx</span> składa się z kilku głównych części:</p>
-  <ul>
-    <li class="text-color mb-2"><span class="font-bold">Actions:</span> to zdarzenia, które opisują jakie zmiany mają
-      zostać dokonane w stanie aplikacji.
-    </li>
-    <li class="text-color mb-2"><span class="font-bold">Reducers:</span> to funkcja, która przyjmuje aktualny stan i
-      akcję, a następnie zwraca nowy stan.
-    </li>
-    <li class="text-color mb-2"><span class="font-bold">Selectors:</span> to funkcje, które pozwalają na wybieranie
-      konkretnych kawałków stanu aplikacji.
-    </li>
-    <li class="text-color mb-2"><span class="font-bold">Store:</span> Centralne miejsce przechowywania stanu aplikacji.
-    </li>
-    <li class="text-color mb-2"><span class="font-bold">Effects:</span> to mechanizm do zarządzania asynchronicznymi
-      operacjami, takimi jak mp. pobieranie danych z serwera.
-    </li>
-  </ul>
-
-  <p class="text-color"><span class="font-bold">Schemat zarządzania stanem</span> za pomocą NgRx:</p>
-  <img class="block w-full" src="./../../../assets/state-management-lifecycle.png">
-
-  <p class="text-color">Do korzystania z NgRx wymagana jest instalacja:</p>
-  <ul>
-    <li class="text-color mb-2"><a class="font-bold" href="https://www.npmjs.com/package/@ngrx/effects" target="_blank">@ngrx/effects</a>
-    </li>
-    <li class="text-color mb-2"><a class="font-bold" href="https://www.npmjs.com/package/@ngrx/router-store"
-                                   target="_blank">@ngrx/router-store</a></li>
-    <li class="text-color mb-2"><a class="font-bold" href="https://www.npmjs.com/package/@ngrx/store" target="_blank">@ngrx/store</a>
-    </li>
-    <li class="text-color mb-2"><a class="font-bold" href="https://www.npmjs.com/package/@ngrx/store-devtools"
-                                   target="_blank">@ngrx/store-devtools</a></li>
-  </ul>
-
-  <p class="text-color">Warto również zainstalować do swojej przeglądarki rozszerzenie <span class="font-bold">Redux DevTools</span>.
-    Umożliwia łatwe debugowanie i monitorowanie stanu aplikacji. Oferuje szereg narzędzi do śledzenia
-    akcji, stanu magazynu (store), podrzędnych stanów i wiele innych. Pozwala programistom na łatwe śledzenie zmian
-    stanu, debugowanie akcji oraz analizę wydajności aplikacji opartej na NgRx. Jest to pomocne narzędzie podczas
-    rozwijania i testowania złożonych aplikacji tworzonych w Angular z użyciem NgRx.
+  <p class="text-color"><span class="font-bold">Serwisy </span>w Angular to kluczowy element architektury
+    tej platformy do budowania aplikacji internetowych. Serwisy to klasy, które są singletonami, co oznacza, że istnieje
+    tylko jedna instancja serwisu w całej aplikacji. Są one używane do udostępniania funkcjonalności i danych, które
+    mogą być współdzielone między różnymi komponentami aplikacji.
   </p>
 
-  <p class="text-color">Pobierz <span class="font-bold">Redux DevTools</span> dla: </p>
+  <p class="text-color">Serwisy są wstrzykiwane do komponentów za pomocą mechanizmu wstrzykiwania zależności Angulara
+    <span class="font-bold">(tzw. dependency injection)</span>.
+    Pozwala to na łatwe dostarczanie funkcjonalności serwisów do różnych części aplikacji, co prowadzi do bardziej
+    modułowego i łatwiejszego do testowania kodu.
+  </p>
+
+  <p class="text-color"><span class="font-bold">Przykłady użycia</span> serwisów w aplikacjach:</p>
   <ul>
-    <li class="text-color mb-2">
-      <span class="font-bold">Chrome: </span>
-      <a href="https://chromewebstore.google.com/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd"
-         target="_blank">Chrome Web Store</a>
+    <li class="text-color mb-2"><span class="font-bold">Serwisy do zarządzania danymi:</span> Serwisy te są
+      wykorzystywane do pobierania danych z serwera, przetwarzania ich i udostępniania komponentom w aplikacji. Mogą to
+      być na przykład serwisy HTTP, które wykonują zapytania do API lub serwisy obsługujące logikę biznesową aplikacji.
     </li>
-    <li class="text-color mb-2">
-      <span class="font-bold">Firefox: </span>
-      <a href="https://addons.mozilla.org/pl/firefox/addon/reduxdevtools/"
-         target="_blank">Firefox Browser Add-Ons</a>
+    <li class="text-color mb-2"><span class="font-bold">Serwisy do udostępniania stanu:</span> Angular obsługuje również
+      serwisy do zarządzania stanem aplikacji, takie jak serwisy przechowujące stan globalny aplikacji, np. za pomocą
+      mechanizmu ReactiveX (np. RxJS) lub stosując wzorzec Redux.
+    </li>
+    <li class="text-color mb-2"><span class="font-bold">Serwisy do udostępniania funkcjonalności globalnych:</span>
+      Można również tworzyć serwisy, które dostarczają globalnie dostępne funkcjonalności, takie jak usługi do obsługi
+      logiki uwierzytelniania, interakcji z użytkownikiem czy logowania.
+    </li>
+    <li class="text-color mb-2"><span class="font-bold">Serwisy do udostępniania narzędzi pomocniczych:</span> Często
+      używa się serwisów do udostępniania narzędzi pomocniczych, takich jak usługi do obsługi zdarzeń, walidacji danych
+      czy manipulacji danymi.
     </li>
   </ul>
+
+  <img class="block w-full" src="./../../../assets/angular-services.png">
+
+  <p class="text-color"><span class="font-bold">Tworzenie nowego serwisu</span> za pomoca Angular CLI: </p>
+  <ul>
+    <li class="text-color mb-2">ng generate service nazwa-serwisu</li>
+    <li class="text-color mb-2">ng g s nazwa-serwisu</li>
+  </ul>
+
+  <p class="text-color">Serwisy przeważnie mają możliwość dodaną opcję <span class="font-bold">providedIn: 'root'</span>
+    w dekoratorze. Oznacza to, że serwis będzie widoczny w całej aplikacji bez konieczności dawania go w <span
+      class="font-bold">providers</span> w module. Warto również pamiętać, że jeżeli serwis nie będzie nigdzie użyty to
+    nie zostanie on zawarty w build'e.
+  </p>
 </div>
