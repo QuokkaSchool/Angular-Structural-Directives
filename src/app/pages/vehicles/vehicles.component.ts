@@ -10,4 +10,12 @@ export class VehiclesComponent {
   protected vehicles: VehicleInterface[] = VEHICLES_DATA;
   protected vehicleStatus: VehicleStatus = VehicleStatus.available;
   protected vehicleType: VehicleType = VehicleType.truck;
+
+  get vehicleStatusOptions(): string[] {
+    return Object.values(VehicleStatus).map(value => String(value));
+  }
+
+  get vehicleTypeOptions(): string[] {
+    return Object.values(VehicleType).map(value => String(value));
+  }
 }

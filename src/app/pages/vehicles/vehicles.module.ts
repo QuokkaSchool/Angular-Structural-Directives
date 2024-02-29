@@ -5,6 +5,8 @@ import { ButtonModule } from 'primeng/button';
 import { VehiclesRoutingModule } from './vehicles-routing.module';
 import { TableModule } from 'primeng/table';
 import { DialogModule } from 'primeng/dialog';
+import { DropdownModule } from 'primeng/dropdown';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { DialogModule } from 'primeng/dialog';
     ButtonModule,
     VehiclesRoutingModule,
     TableModule,
-    DialogModule
+    DialogModule,
+    DropdownModule,
+    FormsModule
   ]
 })
 export class VehiclesModule { }

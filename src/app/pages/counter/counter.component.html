@@ -7,6 +7,6 @@
     <p-button label="-1" (click)="decrement()"/>
   </div>
 
-  <p class="text-color">Osiągnięto wartość <span class="font-bold">minimalną!</span></p>
-  <p class="text-color">Osiągnięto wartość <span class="font-bold">maksymalną!</span></p>
+  <p *ngIf="counter === minValue" class="text-color">Osiągnięto wartość <span class="font-bold">minimalną!</span></p>
+  <p *ngIf="counter === maxValue" class="text-color">Osiągnięto wartość <span class="font-bold">maksymalną!</span></p>
 </div>
