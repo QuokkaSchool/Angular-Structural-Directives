@@ -1,0 +1,30 @@
+<div class="container container--page">
+  <h1 class="text-color">Lista pojazdów (przykład)</h1>
+
+  <ul class="list list--clickable">
+    <li *ngFor="let vehicle of vehicles">
+      {{ vehicle.brand }} {{ vehicle.model }}, {{ vehicle.registrationNumber }}
+    </li>
+  </ul>
+
+  <h2 class="text-color">Wybieranie danych pojazdu</h2>
+
+  <div class="flex gap-2">
+    <p class="text-color">Wybrany status:</p>
+    <div [ngSwitch]="vehicleStatus">
+      <p class="text-color" *ngSwitchCase="'Dostępny'">Dostępny</p>
+      <p class="text-color" *ngSwitchCase="'W użytku'">W użytku</p>
+      <p class="text-color" *ngSwitchCase="'W trakcie konserwacji'">W trakcie konserwacji</p>
+      <p class="text-color" *ngSwitchDefault>Nie wybrano</p>
+    </div>
+  </div>
+
+  <div class="flex gap-2">
+    <p class="text-color">Wybrany typ:</p>
+    <div [ngSwitch]="vehicleType">
+      <p class="text-color" *ngSwitchCase="'Ciężarówka'">Ciężarówka</p>
+      <p class="text-color" *ngSwitchCase="'Furgonetka'">Furgonetka</p>
+      <p class="text-color" *ngSwitchDefault>Nie wybrano</p>
+    </div>
+  </div>
+</div>
