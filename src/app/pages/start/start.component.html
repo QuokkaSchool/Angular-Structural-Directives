@@ -1,8 +1,8 @@
 <div class="container container--page container--shrink">
-  <h1 class="text-color">Serwisy</h1>
+  <h1 class="text-color">Structural Directives (renderowanie elementów)</h1>
 
   <div class="flex justify-content-end">
-    <a href="https://angular.io/guide/architecture-services" target="_blank" rel="noopener noreferrer"
+    <a href="https://angular.io/guide/structural-directives" target="_blank" rel="noopener noreferrer"
        icon="pi pi-check"
        class="p-button p-button-sm font-bold">
       <i class="pi pi-link pr-2"></i>
@@ -10,49 +10,30 @@
     </a>
   </div>
 
-  <p class="text-color"><span class="font-bold">Serwisy </span>w Angular to kluczowy element architektury
-    tej platformy do budowania aplikacji internetowych. Serwisy to klasy, które są singletonami, co oznacza, że istnieje
-    tylko jedna instancja serwisu w całej aplikacji. Są one używane do udostępniania funkcjonalności i danych, które
-    mogą być współdzielone między różnymi komponentami aplikacji.
+  <p class="text-color"><span class="font-bold">Dyrektywy strukturalne </span>są używane do manipulowania strukturą DOM
+    na podstawie warunków logicznych. Są one wykorzystywane do dodawania, usuwania lub zmieniania elementów w zależności
+    od wartości zmiennych lub warunków w kodzie komponentu.
   </p>
 
-  <p class="text-color">Serwisy są wstrzykiwane do komponentów za pomocą mechanizmu wstrzykiwania zależności Angulara
-    <span class="font-bold">(tzw. dependency injection)</span>.
-    Pozwala to na łatwe dostarczanie funkcjonalności serwisów do różnych części aplikacji, co prowadzi do bardziej
-    modułowego i łatwiejszego do testowania kodu.
+  <p class="text-color">
+    Rozpoznasz je po znaku gwiazdki (*) poprzedzającym ich nazwę. Przykładowe dyrektywy strukturalne
+    to <span class="font-bold">*ngIf, *ngFor, *ngSwitch </span> itp.
   </p>
 
-  <p class="text-color"><span class="font-bold">Przykłady użycia</span> serwisów w aplikacjach:</p>
   <ul>
-    <li class="text-color mb-2"><span class="font-bold">Serwisy do zarządzania danymi:</span> Serwisy te są
-      wykorzystywane do pobierania danych z serwera, przetwarzania ich i udostępniania komponentom w aplikacji. Mogą to
-      być na przykład serwisy HTTP, które wykonują zapytania do API lub serwisy obsługujące logikę biznesową aplikacji.
+    <li class="text-color mb-2"><span class="font-bold">*ngIf:</span> Pozwala na warunkowe dodanie lub usunięcie
+      elementu z drzewa DOM w zależności od wartości wyrażenia warunkowego.
     </li>
-    <li class="text-color mb-2"><span class="font-bold">Serwisy do udostępniania stanu:</span> Angular obsługuje również
-      serwisy do zarządzania stanem aplikacji, takie jak serwisy przechowujące stan globalny aplikacji, np. za pomocą
-      mechanizmu ReactiveX (np. RxJS) lub stosując wzorzec Redux.
+    <li class="text-color mb-2"><span class="font-bold">*ngFor:</span> Służy do iteracji przez kolekcję i tworzenia
+      powtarzalnych elementów na podstawie każdego elementu w kolekcji.
     </li>
-    <li class="text-color mb-2"><span class="font-bold">Serwisy do udostępniania funkcjonalności globalnych:</span>
-      Można również tworzyć serwisy, które dostarczają globalnie dostępne funkcjonalności, takie jak usługi do obsługi
-      logiki uwierzytelniania, interakcji z użytkownikiem czy logowania.
-    </li>
-    <li class="text-color mb-2"><span class="font-bold">Serwisy do udostępniania narzędzi pomocniczych:</span> Często
-      używa się serwisów do udostępniania narzędzi pomocniczych, takich jak usługi do obsługi zdarzeń, walidacji danych
-      czy manipulacji danymi.
+    <li class="text-color mb-2"><span class="font-bold">*ngSwitch:</span> Pozwala na dynamiczne przełączanie między
+      elementami na podstawie wartości wyrażenia.
     </li>
   </ul>
 
-  <img class="block w-full" src="./../../../assets/angular-services.png">
-
-  <p class="text-color"><span class="font-bold">Tworzenie nowego serwisu</span> za pomoca Angular CLI: </p>
-  <ul>
-    <li class="text-color mb-2">ng generate service nazwa-serwisu</li>
-    <li class="text-color mb-2">ng g s nazwa-serwisu</li>
-  </ul>
-
-  <p class="text-color">Serwisy przeważnie mają możliwość dodaną opcję <span class="font-bold">providedIn: 'root'</span>
-    w dekoratorze. Oznacza to, że serwis będzie widoczny w całej aplikacji bez konieczności dawania go w <span
-      class="font-bold">providers</span> w module. Warto również pamiętać, że jeżeli serwis nie będzie nigdzie użyty to
-    nie zostanie on zawarty w build'e.
+  <p class="text-color">
+    Korzystanie z tych dyrektyw pozwala na bardziej dynamiczne zarządzanie strukturą DOM w zależności od danych i
+    warunków w komponencie Angulara.
   </p>
 </div>
